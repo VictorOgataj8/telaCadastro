@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "tinos-regular", serif;
+}
+
+header {
+    width: 100%;
+    background-color: #282c34;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu {
+    font-family: "tinos-regular", serif;;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#menu a {
+    font-family: "tinos-regular", serif;
+    color: white;
+    text-decoration: none;
+}
+#item{
+  padding-right: 10px;
+}
+#paragrafoUm{
+    margin-left: 10px;
+    padding:25px 0 25px 0;
+}
+#cadastro{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+#cadastro h1{
+    font-family: "tinos-regular", serif;
+    margin-bottom: 20px;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+}
+footer{
+    text-align: center;
+    background-color: #282c34;
+    width: 100%;
+ 
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    #menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formulario input[type="text"],
+    .formulario input[type="submit"] {
+        width: 100%;
+    }
+}
